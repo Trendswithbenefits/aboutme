@@ -1,36 +1,41 @@
 body {
-  background-color: lightsteelblue
+  background-color: lightsteelblue;
+  margin-left: 10px;
 }
 
 h1{
   position: absolute;
-  font-size: 2.5em;
+  font-size: 2em;
   padding: 5px;
   background-color: rgb(187, 98, 14);
 }
 
-#h2questions {
+#questiondiv {
   position: absolute;
   top: 125px;
   left: 10px;
   width: 40%;
   padding: 5px;
-  font-size: 2em;
+  font-size: 1.5em;
 background-color: lightseagreen;
 border-width: 2px;
 border-style: solid;
 border-color: black;
 }
 
-#h2answers {
+#answerdiv {
   position: absolute;
-  top: 300px;
+  top: 400px;
   left: 10px;
   width: 40%;
   padding: 5px;
-  font-size: 2em;
+  font-size: 1.5em;
 background-color: lightseagreen;
 border-width: 2px;
 border-style: solid;
 border-color: black;
+}
+
+ol {
+margin: 25px;
 }
