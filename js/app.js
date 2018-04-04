@@ -17,6 +17,7 @@ if (q1.toUpperCase() === 'Y' || q1.toUpperCase() === 'YES') {
   console.log('Number correct after Q1:', numRight);
 } else {
   alert('Nope! Maybe you\'ll get the next one.');
+  console.log('Number correct after Q1:', numRight);
 }
 
 var q2 = prompt('Have I ever been out of the United States?');
@@ -29,6 +30,7 @@ if (q2.toUpperCase() === 'Y' || q2.toUpperCase() === 'YES') {
   console.log('Number correct after Q2:', numRight);
 } else {
   alert('Nope! Maybe you\'ll get the next one.');
+  console.log('Number correct after Q2:', numRight);
 }
 
 var q3 = prompt('Am I over 6 feet tall?');
@@ -40,6 +42,7 @@ if (q3.toUpperCase() === 'N' || q3.toUpperCase() === 'NO') {
   console.log('Number correct after Q3:', numRight);
 } else {
   alert('Nope, not quite!');
+  console.log('Number correct after Q3:', numRight);
 }
 
 var q4 = prompt('Am I interested in skydiving again?');
@@ -51,6 +54,7 @@ if (q4.toUpperCase() === 'N' || q4.toUpperCase() === 'NO') {
   console.log('Number correct after Q4:', numRight);
 } else {
   alert('Oh heck no! Moving on...');
+  console.log('Number correct after Q4:', numRight);
 }
 
 var q5 = prompt('Have I ever been married before?');
@@ -62,6 +66,7 @@ if (q5.toUpperCase() === 'Y' || q5.toUpperCase() === 'YES') {
   console.log('Number correct after Q5:', numRight);
 } else {
   alert('As much as I wish you were right, I might never have moved to Seattle had I not been married. Silver linings and all that jazz. :-)');
+  console.log('Number correct after Q5:', numRight);
 }
 
 alert('Thanks for taking my quiz, ' + userName + '! You got ' + numRight + ' answers right!');
