@@ -69,15 +69,32 @@ var numRight = 0;
 //   console.log('Number correct after Q5:', numRight);
 // }
 
-var countState = parseInt(prompt('How many states have I lived in for at least 3 months or longer?'));
+//Initializing the variables for the loop in question 6 and making sure to sanitize the prompt input for numbers only
+
+var countState = parseInt(prompt('How many states have I lived in for at least 3 months or longer? (Please answer using numbers, not words.)'));
 var numGuess = 0;
 console.log('User guess for number of states lived in:', countState);
+var chancesLeft = 4;
 
-while (numGuess < 5) {
+//Question 6. The if loop should exit upon the user guessing the right number. Accounted for a user entering string characters in the second else if
 
-
+while ( chancesLeft > 0 ) {
+  if (chancesLeft === 0) {
+    alert('Sorry! You\'ve run out of guesses. Turns out I\'ve lived in 7 states. What a long, strange journey it\'s been!');
+  } else if (numGuess > 7) {
+    alert('Too high! But I\'m flattered you think I\'m so well-traveled.');
+    (chancesLeft = chancesLeft - 1);
+  } else if (numGuess < 7) {
+    alert('Too low! I\'m bit more experienced than that, for better or for worse.');
+    (chancesLeft = chancesLeft - 1);
+  } else if (numGuess === isNaN) {
+    alert('Whoops! Looks like you entered something that\'s not a number! Please try again.');
+    (chancesLeft = chancesLeft - 1);
+  } else {
+    alert('You got it! What a long, strange journey it\'s been!');
+  }
 }
-
+// Correct answers for question 7. Will have to figure out Question 7 later. Arkansas, Colorado, Missouri, North Carolina, Ohio, Texas, and Washington. 
 
 // alert('Thanks for taking my quiz, ' + userName + '! You got ' + numRight + ' answers right!');
 
