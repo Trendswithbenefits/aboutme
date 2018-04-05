@@ -1,6 +1,8 @@
+
+
 body {
   background-color: lightsteelblue;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 h1{
@@ -9,53 +11,66 @@ h1{
   padding: 5px;
   background-color: rgb(187, 98, 14);
 }
-
-#questiondiv {
+.infobox {
   position: relative;
+
+  float: top;
+  margin: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 5px;
+
+}
+#questiondiv {
   left: 10px;
   width: 40%;
-  padding: 5px;
   font-size: 1.5em;
-background-color: lightseagreen;
-border-width: 2px;
-border-style: solid;
-border-color: black;
+  background-color: lightseagreen;
+
 }
 
 #answerdiv {
   
-  position: relative;
   left: 10px;
   width: 40%;
-  padding: 5px;
   font-size: 1.5em;
-background-color: lightseagreen;
-border-width: 2px;
-border-style: solid;
-border-color: black;
+  background-color: lightseagreen;
+
 }
 
 ol {
 margin: 25px;
+padding: 5px;
 }
 
 ul {
+padding: 5px;
 margin: 25px;
 }
 
 #schooldiv {
+  margin-top: 10px;
   float: left;
-  /* display: inline-block; */
+  left: 10px;
+  width: 40%;
   max-width: 300px;
   max-height: auto;
-  background-color: lightcoral;
+  background-color: white;
   font-size: 1.5em;
-  border-width: : 2px;
-  border-style: solid;
-  border-color: black;
+  
+  
 }
 
-.infobox {
-  float: top;
-  margin: 25px;
+#toptendiv {
+margin-top: 10px;
+float: right;
+width: 50%;
+margin-right: 30px;
+font-size: 1.5em;
+
+}
+
+section {
+  max-width = 40%;
 }
