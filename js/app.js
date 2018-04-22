@@ -98,11 +98,11 @@ function q6() {
   var numGuess = 0;
 
   for (var i = 0; i < 3; i ++) {
-    numGuess= parseInt(prompt('How many states have I lived in for at least 3 months or longer? (Please answer using numbers, not words.)'));
+    numGuess= parseInt(prompt('How many states have I lived in for at least 3 months or longer? (Please answer using numbers, not words.) You have 4 chances to get it right.'));
 
     if (numGuess === statesLived) {
       alert('You got it! What a long, strange journey it\'s been!');
-      console.log('You are correct-o!');
+      console.log('You are correct!');
       numRight = numRight + 1;
       console.log('Number correct after Q6:', numRight);
       break;
@@ -114,7 +114,7 @@ function q6() {
     } else if (numGuess < 7) {
       alert('Too low! I\'m bit more experienced than that, for better or for worse.');
 
-    } else if (numGuess === isNaN) {
+    } else if (Number.isNaN(numGuess)) {
       alert('Whoops! Looks like you entered something that\'s not a number! Please try again.');
 
     } else {
